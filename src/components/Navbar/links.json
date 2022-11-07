@@ -1,0 +1,12 @@
+{
+    "links": [
+        {
+            "label": "Alle Artikel",
+            "href": "/allArticles"
+        },
+        {
+            "label": "",
+            "href": "/home"
+        }
+    ]
+}

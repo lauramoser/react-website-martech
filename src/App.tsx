@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AllArticles from "./components/Articles/AllArticles";
+import Navbar from "./components/Navbar/Navbar";
+import SelectedArticle from "./pages/SelectedArticle";
+import Home from "./pages/Home";
+import Footer from "./components/Footer/Footer";
 
-function App() {
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/allarticles" element={<AllArticles />} />
+          <Route path="/selectedarticle" element={<SelectedArticle />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </React.Fragment>
   );
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById("root"));

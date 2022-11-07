@@ -1,0 +1,24 @@
+{
+    "icons": [
+        {
+            "picture": "/images/facebook.png",
+            "href": "https://www.facebook.com/sevdesk"
+        },
+        {
+            "picture": "/images/twitter.png",
+            "href": "https://twitter.com/sevdeskoffice"
+        },
+        {
+            "picture": "/images/pinterest.png",
+            "href": "https://www.pinterest.de/sevdesk/"
+        },
+        {
+            "picture": "/images/youtube.png",
+            "href": "https://www.youtube.com/channel/UCjioq2QuGj7tR0zcV6eTjZQ"
+        },
+        {
+            "picture": "/images/linkedin.png",
+            "href": "https://www.linkedin.com/company/sevenit-gmbh/mycompany/verification/"
+        }
+    ]
+}
