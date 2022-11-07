@@ -19,8 +19,6 @@ zum Autor enthalten. Bei der Darstellung hast du freie Hand!
 du hier Schwierigkeiten mit der Programmierung haben, kannst du alternativ Schritt für
 Schritt erklären, wie eine solche Lösung aussehen könnte.
 
-
-<<<<<<< HEAD
 ## Um die Webseite zu testen müssen folgende Schritte durchgeführt werden:
 
 1. Zip herunterladen und in gewünschter Programmierumgebung öffnen | Clonen und Repository in gewünschter Programmierumgebung öffnen
@@ -29,6 +27,3 @@ Schritt erklären, wie eine solche Lösung aussehen könnte.
 
 3. Danach "npm install" durchführen und dann "npm start"
 
-=======
-Um die Webseite zu testen muss folgendes in das Terminal eingegeben werden: "npm start"
->>>>>>> d35d9c867091198874e2e055ffe12de2193e634c
