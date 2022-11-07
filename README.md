@@ -20,5 +20,4 @@ du hier Schwierigkeiten mit der Programmierung haben, kannst du alternativ Schri
 Schritt erklären, wie eine solche Lösung aussehen könnte.
 
 
-Um die Webseite zu testen muss folgendes in das Terminal eingegeben werden
-"npm start"
+Um die Webseite zu testen muss folgendes in das Terminal eingegeben werden: "npm start"
