@@ -50,6 +50,8 @@ type authorImage = {
 
 }
 
+allDatoCmsPost.sort(() => Math.random() - Math.random()).find(() => true);
+
 const Best: React.FC<{ data: node[] }> = ({ data }) => {
     return (
         <div>
@@ -57,7 +59,7 @@ const Best: React.FC<{ data: node[] }> = ({ data }) => {
                 return (
                     <div className={styles["blog-bestArt"]}>
                         <div className={styles["post"]}>
-                            <img src={data.node.hero.url}></img>
+                            <img src={data.node.hero.url} alt="hero"></img>
                             <h3>{data.node.seoSettings.title}</h3>
                             <p className={styles["description"]}>{data.node.seoSettings.description}</p>
                             <p className={styles["author"]}>{data.node.author.authorName}</p>

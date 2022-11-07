@@ -20,5 +20,11 @@ du hier Schwierigkeiten mit der Programmierung haben, kannst du alternativ Schri
 Schritt erklären, wie eine solche Lösung aussehen könnte.
 
 
-Um die Webseite zu testen muss folgendes in das Terminal eingegeben werden
-"npm start"
+## Um die Webseite zu testen müssen folgende Schritte durchgeführt werden:
+
+1. Zip herunterladen und in gewünschter Programmierumgebung öffnen | Clonen und Repository in gewünschter Programmierumgebung öffnen
+
+2. Terminal öffnen und in den "react-website-martech" Ordner gehen 
+
+3. Danach "npm install" durchführen und dann "npm start"
+

@@ -82,18 +82,21 @@
     overflow: hidden;
     max-height: 110px;
     min-height: 110px;
+    padding: 0 20px 0 20px;
 }
 
 .author {
     float: left;
     font-size: 14px;
     font-style: italic;
+    padding-left: 20px;
 }
 
 .date {
     float: right;
     font-size: 14px;
     font-style: italic;
+    padding-right: 20px;
 }
 
 /* BestArt*/

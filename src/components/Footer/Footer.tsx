@@ -15,7 +15,7 @@ const Icons: React.FC<{ links: Icon[] }> = ({ links }) => {
             {links.map((link: Icon) => {
                 return (
                     <div key={link.href} className={styles['link']}>
-                        <a href={link.href}>
+                        <a href={link.href} target="_blank" rel="noreferrer">
                             <img src={link.picture} alt=""></img>
                         </a>
                     </div>
@@ -29,7 +29,7 @@ const Icons: React.FC<{ links: Icon[] }> = ({ links }) => {
     return (
         <div className={styles.footer}>
             <Icons links={icons} />
-            <p>Made with <span><img src="/images/heart.png"></img></span> in Furtwangen</p>
+            <p>Made with <span><img src="/images/heart.png" alt=""></img></span> in Furtwangen</p>
         </div>
     )
   }
