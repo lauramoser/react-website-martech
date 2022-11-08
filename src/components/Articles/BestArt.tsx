@@ -50,7 +50,7 @@ type authorImage = {
 
 }
 
-allDatoCmsPost.sort(() => Math.random() - Math.random()).find(() => true);
+// allDatoCmsPost.sort(() => Math.random() - Math.random()).find(() => true);
 
 const Best: React.FC<{ data: node[] }> = ({ data }) => {
     return (
