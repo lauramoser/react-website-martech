@@ -57,7 +57,7 @@ interface SelectedProps {
 const Blog: React.FC<SelectedProps> = ({ data, index }) => {
     return (
         <div>
-            {data.slice(index, index + 1).map((data: node) => {
+            {data.slice(index).map((data: node) => {
                 return (
                     <div className={styles["container"]}>
                         <div className={styles["header"]}>
