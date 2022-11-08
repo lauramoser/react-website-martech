@@ -4,9 +4,6 @@ import * as data from "./blogposts.json";
 const allDatoCmsPostString = JSON.stringify(data)
 const allDatoCmsPost = JSON.parse(allDatoCmsPostString).allDatoCmsPost;
 
-let selected = 2;
-
-
 type node = {
     node: information;
 
@@ -76,8 +73,8 @@ const Blog: React.FC<SelectedProps> = ({ data, index }) => {
                         </div>
                         <div className={styles["article"]}>
                             <h1>{data.node.title}</h1>
-                            <p dangerouslySetInnerHTML={{ __html: data.node.content }}></p>
-                            <p className={styles["date-article"]}>{data.node.meta.publishedAt} von {data.node.author.authorName}</p>
+                            <p className={styles["date-name"]}>{data.node.meta.publishedAt} von {data.node.author.authorName}</p>
+                            <p className={styles["content"]} dangerouslySetInnerHTML={{ __html: data.node.content }}></p>
                         </div>
 
                         <div id="Profile" className={styles["moreAboutAuthor"]}>
