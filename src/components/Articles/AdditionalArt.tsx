@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "./Articles.module.css";
 import * as data from "./blogposts.json";
+import { Carousel } from 'react-responsive-carousel';
 const allDatoCmsPostString = JSON.stringify(data);
 const allDatoCmsPost = JSON.parse(allDatoCmsPostString).allDatoCmsPost;
-
-let size = 3;
 
 type node = {
     node: information;
@@ -50,37 +49,51 @@ type authorImage = {
 
 }
 
-const More: React.FC<{ data: node[] }> = ({ data }) => {
+const CarouselItem: React.FC<{ data: node[] }> = ({ data }) => {
     return (
         <div>
-            {data.slice(size, size + 3).map((data: node) => {
+            {/* {data.map((data: node, index) => {
                 return (
-                    <div className={styles["lengthArt"]}>
-                        <table>
-                            <tr>
-                                <td className={styles["additional-pictures"]}>
-                                    <img src={data.node.hero.url} alt="" className={styles["additional-hero"]}></img>
-                                    <img src={data.node.author.authorImage.url} alt="" className={styles["additional-author"]}></img>
-                                </td>
-                                <td className={styles["additional-text"]}>
-                                    <h3>{data.node.seoSettings.title}</h3>
-                                    <p dangerouslySetInnerHTML={{ __html: data.node.seoSettings.description }}></p>
-                                    {/* <p className={styles["content"]} dangerouslySetInnerHTML={{ __html: data.node.content }}></p> */}
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                    <Carousel autoPlay >
+                        <CarouselItem>
+                            <CImage className="d-block w-100" src="/images/react.jpg" alt="slide 1" />
+                            <CCarouselCaption className="d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </CCarouselCaption>
+                        </CarouselItem>
+                    </Carousel>
                 )
-            })}
+            })} */}
         </div>
     )
 }
 
-const Articles: React.FC<{}> = () => {
+// const More: React.FC<{ data: node[] }> = ({ data }) => {
+//     return (
+//         <Carousel autoPlay>
+//             {data.map((data: node, index) =>
+//             (
+//                 <Slide>
+//                     {allBlogs.nodes.slice(index, 2).map((blog) =>
+//                     (
+//                         <BlogAuthor>
+//                             <Author>{blog.data.author}</Author>
+//                             <BlogDate>{blog.data.date}</BlogDate>
+//                         </BlogAuthor>
+//                     )
+//                     )}
+//                 </Slide>
+//             )}
+//         </Carousel>
+//     )
+// }
+
+const Slider: React.FC<{}> = () => {
     return (
         <div>
-            <div className={styles["more-container"]}>
-                <More data={allDatoCmsPost} />
+            <div className={styles["carousel-container"]}>
+                <CarouselItem data={allDatoCmsPost} />
             </div>
         </div>
 
@@ -88,4 +101,4 @@ const Articles: React.FC<{}> = () => {
 }
 
 
-export default Articles;
+export default Carousel;

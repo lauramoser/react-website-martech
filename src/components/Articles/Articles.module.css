@@ -248,7 +248,7 @@ img .img-fluid.lazyload {
 
 /*AdditionalArt */
 
-.carousel-container {
+/* .carousel-container {
     width: 100%;
     height: 400px;
 }
@@ -257,9 +257,9 @@ img .img-fluid.lazyload {
     width: 100px;
 }
 
-/* .legend img {
+.legend img {
     width: 100px;
-} */
+}
 
 ol li {
     list-style: none;
@@ -272,4 +272,4 @@ ol li {
     padding-top: 75%;
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
-}
+} */
