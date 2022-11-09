@@ -30,7 +30,7 @@ const Nav: React.FC<{}> = () => {
       <nav className={styles.navbar}>
           <div className={styles['logo-container']}>
             <a href="/home">
-            <img src="/images/sevDesk_logo.png"></img>
+            <img src="/images/sevDesk_logo.png" alt=""></img>
             </a>
           </div>
           <Links links={links} />

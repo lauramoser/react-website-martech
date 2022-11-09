@@ -56,7 +56,7 @@ const Blogpost: React.FC<{ data: node[] }> = ({ data }) => {
                 return (
                     <div className={styles["blog"]}>
                         <div className={styles["post"]}>
-                            <img src={data.node.hero.url}></img>
+                            <img src={data.node.hero.url} alt=""></img>
                             <h3>{data.node.seoSettings.title}</h3>
                             <p className={styles["description"]}>{data.node.seoSettings.description}</p>
                             <p className={styles["author"]}>{data.node.author.authorName}</p>

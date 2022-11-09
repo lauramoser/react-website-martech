@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 const Head: React.FC<{}> = () => {
     return(
         <div className={styles["header-container"]}>
-          <img src="/images/header_pic.jpg"/>
+          <img src="/images/header_pic.jpg" alt=""/>
         </div> 
     );
   }
